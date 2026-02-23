@@ -1,12 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-
-const areas = [
-  { name: "Indiranagar", vibe: "Cafés, craft beer & boutiques" },
-  { name: "Koramangala", vibe: "Startups, street food & nightlife" },
-  { name: "MG Road", vibe: "Heritage walks & shopping" },
-  { name: "Whitefield", vibe: "Tech parks & global cuisine" },
-  { name: "Jayanagar", vibe: "Old Bangalore charm & local eateries" },
-];
+import { Link } from "react-router-dom";
+import { neighborhoods } from "@/data/places";
 
 const Neighborhoods = () => (
   <section id="neighborhoods" className="py-24 lg:py-32">
@@ -17,9 +11,10 @@ const Neighborhoods = () => (
       </div>
 
       <div className="space-y-0">
-        {areas.map((a, i) => (
-          <div
+        {neighborhoods.map((a, i) => (
+          <Link
             key={a.name}
+            to={`/explore/${a.slug}`}
             className="flex items-center justify-between py-6 border-b border-accent/20 group cursor-pointer hover:pl-4 transition-all duration-300"
           >
             <div className="flex items-baseline gap-6">
@@ -30,7 +25,7 @@ const Neighborhoods = () => (
               </div>
             </div>
             <ArrowUpRight size={20} className="text-accent opacity-0 group-hover:opacity-100 transition-opacity" />
-          </div>
+          </Link>
         ))}
       </div>
     </div>

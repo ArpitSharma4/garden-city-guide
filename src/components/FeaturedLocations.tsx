@@ -1,13 +1,6 @@
 import { MapPin } from "lucide-react";
-
-const locations = [
-  { name: "Lalbagh Botanical Garden", tag: "Nature", img: "https://images.unsplash.com/photo-1580581096469-8afb1650796a?w=600&q=80" },
-  { name: "Cubbon Park", tag: "Nature", img: "https://images.unsplash.com/photo-1585123388867-3bfe6dd4bdbf?w=600&q=80" },
-  { name: "Bangalore Palace", tag: "Heritage", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" },
-  { name: "Church Street", tag: "Food & Culture", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" },
-  { name: "Commercial Street", tag: "Shopping", img: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=80" },
-  { name: "Nandi Hills", tag: "Weekend Trip", img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-];
+import { Link } from "react-router-dom";
+import { featuredLocations } from "@/data/places";
 
 const FeaturedLocations = () => (
   <section id="locations" className="py-24 lg:py-32 bg-primary">
@@ -18,8 +11,12 @@ const FeaturedLocations = () => (
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {locations.map((loc) => (
-          <div key={loc.name} className="group cursor-pointer overflow-hidden border border-accent/20 hover:border-accent/50 transition-all duration-500">
+        {featuredLocations.map((loc) => (
+          <Link
+            key={loc.name}
+            to={`/explore/${loc.slug}`}
+            className="group cursor-pointer overflow-hidden border border-accent/20 hover:border-accent/50 transition-all duration-500"
+          >
             <div className="aspect-[4/3] overflow-hidden">
               <img src={loc.img} alt={loc.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
             </div>
@@ -30,7 +27,7 @@ const FeaturedLocations = () => (
                 {loc.name}
               </h3>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

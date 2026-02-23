@@ -1,12 +1,12 @@
 import { Camera } from "lucide-react";
 
 const photos = [
-  { src: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=500&q=80", label: "Sunrise at Nandi Hills" },
-  { src: "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=500&q=80", label: "Lalbagh Glass House" },
-  { src: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500&q=80", label: "Bengaluru Skyline" },
-  { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80", label: "South Indian Cuisine" },
-  { src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=500&q=80", label: "Cubbon Park Mornings" },
-  { src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&q=80", label: "Heritage Architecture" },
+  { src: "/nandihills.jpeg", label: "Sunrise at Nandi Hills" },
+  { src: "/Lalbagh.jpeg", label: "Lalbagh Botanical Garden" },
+  { src: "/Bengaluru’s-Vidhana-Soudha-could-be-worth-over-Rs-3900-crores-FB-1200x700-compressed.jpg", label: "Vidhana Soudha" },
+  { src: "/cubbon.jpg", label: "Cubbon Park Mornings" },
+  { src: "/churchstreet.jpg", label: "Vibrant Church Street" },
+  { src: "/commercialstreet.jpg", label: "Commercial Street Shopping" },
 ];
 
 const Gallery = () => (

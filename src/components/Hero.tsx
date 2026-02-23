@@ -1,4 +1,3 @@
-import heroImage from "@/assets/hero-vidhana-soudha.jpg";
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => (
@@ -27,7 +26,7 @@ const Hero = () => (
       <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
         <div className="aspect-[4/5] lg:aspect-[3/4] overflow-hidden">
           <img
-            src={heroImage}
+            src="/Bengaluru’s-Vidhana-Soudha-could-be-worth-over-Rs-3900-crores-FB-1200x700-compressed.jpg"
             alt="Vidhana Soudha, Bengaluru"
             className="w-full h-full object-cover"
             loading="eager"
