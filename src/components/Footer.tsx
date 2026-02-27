@@ -9,7 +9,7 @@ const Footer = () => (
           <p className="font-sans text-sm text-primary-foreground/60 mt-2">Your curated guide to the Garden City.</p>
         </div>
         <p className="font-sans text-xs text-primary-foreground/40 tracking-wide">
-          © {new Date().getFullYear()} Explore Bengaluru. Crafted by Arpit Sharma.
+          © {new Date().getFullYear()} Explore Bengaluru. Crafted by Arpit Sharma & Ayush Kumar.
         </p>
       </div>
     </div>
