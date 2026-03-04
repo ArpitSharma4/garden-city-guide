@@ -13,7 +13,7 @@ const Founder = () => (
             "Bengaluru isn't just a city — it's a feeling. From the misty mornings at Nandi Hills to the electric nights of Indiranagar, every corner tells a story. This platform is our love letter to the city we call home."
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-start">
             <div className="flex flex-col items-center gap-4">
               <div className="w-20 h-20 rounded-full bg-muted gold-ring flex items-center justify-center">
                 <span className="font-serif text-2xl font-bold text-foreground">AS</span>
@@ -22,7 +22,7 @@ const Founder = () => (
                 <h3 className="font-serif text-lg font-semibold text-foreground">Arpit Sharma</h3>
                 <p className="font-sans text-sm text-accent">Founder & Local Travel Curator</p>
               </div>
-              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2">
+              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2 text-center md:text-left">
                 Passionate about showcasing Bengaluru through authentic local experiences and curated travel guides.
               </p>
             </div>
@@ -35,8 +35,34 @@ const Founder = () => (
                 <h3 className="font-serif text-lg font-semibold text-foreground">Ayush Kumar</h3>
                 <p className="font-sans text-sm text-accent">Co-Founder & Technical Architect</p>
               </div>
-              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2">
+              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2 text-center md:text-left">
                 Engineering the digital pathways to help you discover the hidden gems and vibrant culture of Bengaluru.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-20 h-20 rounded-full bg-muted gold-ring flex items-center justify-center">
+                <span className="font-serif text-2xl font-bold text-foreground">NK</span>
+              </div>
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground">Natin Kumar</h3>
+                <p className="font-sans text-sm text-accent">Place Discovery Scout</p>
+              </div>
+              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2 text-center md:text-left">
+                On a constant quest to find the most unique and soulful spots that define the true spirit of Bengaluru.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-20 h-20 rounded-full bg-muted gold-ring flex items-center justify-center">
+                <span className="font-serif text-2xl font-bold text-foreground">AF</span>
+              </div>
+              <div>
+                <h3 className="font-serif text-lg font-semibold text-foreground">Adrian J Fernandes</h3>
+                <p className="font-sans text-sm text-accent">Visual Storyteller & Photographer</p>
+              </div>
+              <p className="font-sans text-sm text-muted-foreground max-w-xs leading-relaxed mt-2 text-center md:text-left">
+                Capturing the vibrant colors and timeless essence of the Garden City through a lens of wonder.
               </p>
             </div>
           </div>
